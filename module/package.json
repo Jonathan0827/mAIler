@@ -1,0 +1,15 @@
+{
+	"name": "mod",
+	"version": "1.0.0",
+	"description": "Modules for m'AI'ler",
+	"main": "app.py",
+	"scripts": {
+		"mod": "python3 app.py",
+		"dmod": "python3 debug.py"
+	},
+	"keywords": [
+		"Module"
+	],
+	"author": "Jonathan0827",
+	"license": "UNLICENSED"
+}

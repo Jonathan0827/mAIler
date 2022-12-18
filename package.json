@@ -1,0 +1,26 @@
+{
+	"name": "mailer",
+	"version": "1.0.0",
+	"description": "m'AI'ler",
+	"main": "index.js",
+	"scripts": {
+		"test": "nodemon index.js",
+		"mod": "python3 app.py",
+		"git": "git add . && git commit && git push"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/Jonathan0827/mAIler.git"
+	},
+	"author": "Jonathan0827",
+	"license": "UNLICENSED",
+	"bugs": {
+		"url": "https://github.com/Jonathan0827/mAIler/issues"
+	},
+	"homepage": "https://github.com/Jonathan0827/mAIler#readme",
+	"dependencies": {
+		"axios": "^0.26.1",
+		"dotenv": "^16.0.3",
+		"nodemailer": "^6.8.0"
+	}
+}
