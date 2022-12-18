@@ -2,3 +2,4 @@
 .env
 config/school.json
 module/data/
+*.dat
