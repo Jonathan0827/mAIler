@@ -6,7 +6,7 @@ const fs = require("fs");
 axios.get(weatherUrl).then(async (res) => {
 	console.log(res.data.weather);
 	const file = "./module/data/weather.dat";
-	const msg = `Weather information: ${res.data.weather[0].main} right now. Current tempreture is ${res.data.main.temp}°C. But it feels like ${res.data.main.feels_like}°C.`;
+	const msg = `Weather information<br /><strong>${res.data.weather[0].main}</strong> right now.<br />Current tempreture is <strong>${res.data.main.temp}°C</strong>. But it feels like <strong>${res.data.main.feels_like}°C</strong>.`;
 	fs.writeFile(file, msg, (err) => {
 		console.log(err);
 	});

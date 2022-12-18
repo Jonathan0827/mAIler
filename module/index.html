@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Good Morning, Jonathan!</title>
+	</head>
+	<style>
+		:root {
+			font-family: system-ui, -apple-system, BlinkMacSystemFont,
+				"Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+				"Helvetica Neue", sans-serif;
+			/* background-color: #000000; */
+			/* color: white; */
+		}
+		header {
+			text-align: center;
+		}
+		main {
+			font-weight: bolder;
+		}
+		hr {
+			border: none;
+			height: 4px;
+			width: 100%;
+			background-color: rgb(152, 152, 152);
+		}
+		/*****************************************/
+		/*    Highlight style for <strong> tag   */
+		/*****************************************/
+
+		strong {
+			position: relative;
+		}
+
+		strong::before {
+			/* Highlight color */
+			background-color: #46b96c;
+
+			content: "";
+			position: absolute;
+			width: calc(100% + 4px);
+			height: 60%;
+			left: -2px;
+			bottom: 0;
+			z-index: -1;
+			transform: rotate(-2deg);
+		}
+
+		/*****************************************/
+		/*               Page style              */
+		/*****************************************/
+
+		* {
+			box-sizing: border-box;
+			font-family: sans-serif;
+		}
+
+		.content {
+			display: flex;
+			margin: 40px auto;
+			min-height: 100vh;
+			max-width: 450px;
+			justify-content: center;
+			align-items: center;
+			flex-direction: column;
+		}
+
+		.content > * {
+			width: 100%;
+		}
+	</style>
+	<body>
+		<header>
+			<h1>Good Morning, Jonathan!</h1>
+		</header>
+		<hr />
+		<main>
+			<h2>
+				Meal Information: Meal <br />
+				Weather Information: <strong>Snow</strong>
+			</h2>
+		</main>
+	</body>
+</html>

@@ -7,7 +7,7 @@ axios.get(covidUrl).then((res) => {
 	const data = res.data;
 	console.log(data.daejeon);
 	const file = "./module/data/covid.dat";
-	const msg = `Covid Information: Daejeon got ${data.daejeon.newCase} cases, ${data.daejeon.newFcase} deaths today.\nTotal cases are ${data.daejeon.totalCase} and total deaths are ${data.daejeon.death}.`;
+	const msg = `Covid Information<br />Daejeon got <strong>${data.daejeon.newCase}</strong> new cases and <strong>${data.daejeon.newFcase}</strong> deaths today.<br />Total cases are ${data.daejeon.totalCase} and total deaths are ${data.daejeon.death}.`;
 	fs.writeFile(file, msg, (err) => {
 		console.log(err);
 	});

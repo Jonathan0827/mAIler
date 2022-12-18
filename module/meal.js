@@ -21,13 +21,17 @@ async function mealInfo() {
 		meal = meal.replaceAll("*", " ");
 		meal = meal.replaceAll("밥", "밥, ");
 		meal = meal.replaceAll(")", "), ");
-		fs.writeFile(file, `School lunch information: ${meal}`, (err) =>
-			console.log(err)
+		fs.writeFile(
+			file,
+			`School lunch information<br/><strong>${meal}</strong>`,
+			(err) => console.log(err)
 		);
 	} catch (error) {
 		let meal = "No School Lunch";
-		fs.writeFile(file, `School lunch information: ${meal}`, (err) =>
-			console.log(err)
+		fs.writeFile(
+			file,
+			`School lunch information<br /><strong>${meal}</strong>`,
+			(err) => console.log(err)
 		);
 	}
 }
